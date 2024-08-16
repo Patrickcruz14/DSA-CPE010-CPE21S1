@@ -1,0 +1,24 @@
+Class Shape:
+    def calculate_Area(self):
+        raise NotImplemented error("Subclasses Need to define this")
+
+    def show_are(self):
+
+
+class Rectangle:
+    def __init__(self, length=1.0, width=1.0):
+        self.length = length
+        self.width = width
+
+    def calculate_area(self):
+        return round(self.length * self.width, 2)
+
+    def display_area(self):
+        print(f"The area of the rectangle with length {self.length} and width {self.width} is: {self.calculate_area()} square units")
+
+length = float(input("Enter the length of the rectangle: "))
+width = float(input("Enter the width of the rectangle: "))
+
+rectangle = Shape(length, width)
+rectangle.display_area()
+
